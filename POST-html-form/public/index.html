@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Form - POST Request Example</title>
+    </head>
+
+
+
+    <body>
+        <!-- INCLUDE method="POST" to let HTML know the user will be sending a POST request when they click the submit button -->
+        <!-- INCLUDE action="/submitted" so that the URL will change to that as soon as the user submits the form -->
+        <!-- you need to provide name="" attribute for each input as well, this will be the key of the key-value pair that will be posted to the server -->
+        <form action="/submitted" method="POST">
+            <input type="text" placeholder="First Name" name="firstName">
+
+            <input type="text" placeholder="Last Name" name="lastName">
+
+            <input type="text" placeholder="Age" name="age">
+
+            <input type="text" placeholder="Email" name="email">
+
+            <input type="submit">
+
+        </form>
+
+
+    </body>
+</html>
